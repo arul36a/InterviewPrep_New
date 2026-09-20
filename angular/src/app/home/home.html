@@ -1,0 +1,30 @@
+<section>
+  <p class="phase">Phase 1 of 9 — standalone + signals. Stop here until you can explain this page.</p>
+
+  <h1>Intela Calc UI (Angular)</h1>
+  <p>
+    Standalone component. Count is a <code>signal</code>. Doubled is
+    <code>computed</code>. List uses built-in <code>for</code> with <code>track</code>.
+  </p>
+
+  <div class="counter">
+    <button type="button" (click)="dec()">−</button>
+    <strong>{{ count() }}</strong>
+    <button type="button" (click)="inc()">+</button>
+  </div>
+
+  @if (count() === 0) {
+    <p>Count is empty (control-flow <code>if</code>, not <code>*ngIf</code>).</p>
+  } @else {
+    <p>Doubled: {{ doubled() }}</p>
+  }
+
+  <h2>Trial-balance labels</h2>
+  <ul>
+    @for (line of lines(); track line.code) {
+      <li>{{ line.code }} — {{ line.name }}</li>
+    } @empty {
+      <li>No lines</li>
+    }
+  </ul>
+</section>

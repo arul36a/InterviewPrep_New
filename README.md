@@ -106,3 +106,30 @@ Same template, new hosts: AdjustmentCalculation, InternationalCalc, then orchest
 ## Phase 7 — NFRs + AKS
 
 Health probes, retries, KEDA for seasonal load. Mechanisms first; no invented 99.99% availability SLA.
+
+---
+
+## Angular interview app (separate folder)
+
+UI practice lives in [`angular/`](angular/README.md), not in `docs/`. **Phase 1 only** is coded.
+
+| Phase | Status | Goal |
+| --- | --- | --- |
+| 1. Standalone + signals | **In the repo** | `App` shell, `Home`, `signal` / `computed`, `@if` / `@for` |
+| 2. Components / templates | Next | `input()`, content projection, pipe, directive |
+| 3. DI | Planned | Root service, injectors |
+| 4. Change detection | Planned | OnPush vs Eager, `effect` |
+| 5. Router | Planned | Lazy load, guards, params |
+| 6. HTTP + RxJS | Planned | `httpResource`, interceptor, `switchMap` |
+| 7. Forms | Planned | Template / Reactive / Signal Forms |
+| 8. SSR / a11y / AI | Planned | `@defer`, Aria, MCP vs WebMCP |
+| 9. Testing | Planned | TestBed, signal service, harness |
+
+```bash
+cd angular
+npm install
+npm start
+```
+
+http://localhost:4200
+

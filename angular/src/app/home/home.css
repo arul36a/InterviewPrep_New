@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  max-width: 40rem;
+}
+
+.phase {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+button {
+  min-width: 2.5rem;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
