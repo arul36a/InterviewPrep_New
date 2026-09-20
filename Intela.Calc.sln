@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38D5330F-C1A4-40B2-BF5A-E6176B056A97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{F73F888C-FB56-498F-8FC0-6483EC3018A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaxCalc", "TaxCalc", "{FE6BC41A-BD26-4469-9FCE-F7598C63B545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intela.TaxCalc", "src\services\TaxCalc\Intela.TaxCalc\Intela.TaxCalc.csproj", "{DD9176F2-920E-4B99-9A9A-0D95AB04033A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intela.TaxCalc.Tests", "src\services\TaxCalc\Intela.TaxCalc.Tests\Intela.TaxCalc.Tests.csproj", "{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD9176F2-920E-4B99-9A9A-0D95AB04033A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9176F2-920E-4B99-9A9A-0D95AB04033A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9176F2-920E-4B99-9A9A-0D95AB04033A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9176F2-920E-4B99-9A9A-0D95AB04033A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F73F888C-FB56-498F-8FC0-6483EC3018A5} = {38D5330F-C1A4-40B2-BF5A-E6176B056A97}
+		{FE6BC41A-BD26-4469-9FCE-F7598C63B545} = {F73F888C-FB56-498F-8FC0-6483EC3018A5}
+		{DD9176F2-920E-4B99-9A9A-0D95AB04033A} = {FE6BC41A-BD26-4469-9FCE-F7598C63B545}
+		{364F37B6-2F29-43BB-ABEF-6C8C6FE9BAA3} = {FE6BC41A-BD26-4469-9FCE-F7598C63B545}
+	EndGlobalSection
+EndGlobal

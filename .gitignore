@@ -1,0 +1,16 @@
+.DS_Store
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+TestResults/
+coverage/
+*.trx
+*.nupkg
+.DS_Store
+appsettings.Local.json
+.env
+artifacts/

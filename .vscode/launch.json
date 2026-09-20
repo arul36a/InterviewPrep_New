@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TaxCalc",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/services/TaxCalc/Intela.TaxCalc/bin/Debug/net8.0/Intela.TaxCalc.dll",
+      "cwd": "${workspaceFolder}/src/services/TaxCalc/Intela.TaxCalc",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5101"
+      }
+    }
+  ]
+}

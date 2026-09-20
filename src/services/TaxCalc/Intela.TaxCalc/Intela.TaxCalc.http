@@ -1,0 +1,14 @@
+@host = http://localhost:5101
+
+POST {{host}}/api/calculations
+Content-Type: application/json
+
+{
+  "lines": [
+    { "accountCode": "4000", "accountName": "Book income", "amount": 100000, "taxTreatment": "Book" },
+    { "accountCode": "5000", "accountName": "Meals", "amount": 5000, "taxTreatment": "Permanent" },
+    { "accountCode": "6000", "accountName": "Depreciation", "amount": 2000, "taxTreatment": "Temporary" }
+  ]
+}
+
+###
