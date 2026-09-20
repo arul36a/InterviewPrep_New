@@ -4,6 +4,7 @@ import { App } from './app';
 
 describe('App', () => {
   beforeEach(async () => {
+    localStorage.removeItem('theme');
     await TestBed.configureTestingModule({
       imports: [App],
       providers: [provideRouter([])],
@@ -19,5 +20,10 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     expect((fixture.nativeElement as HTMLElement).textContent).toContain('Interview Angular');
+  });
+
+  it('defaults to dark mode', () => {
+    const fixture = TestBed.createComponent(App);
+    expect(fixture.componentInstance.theme()).toBe('dark');
   });
 });

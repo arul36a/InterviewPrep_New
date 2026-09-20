@@ -5,7 +5,7 @@
 
 .phase {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--muted);
 }
 
 .counter {
@@ -19,4 +19,14 @@ button {
   min-width: 2.5rem;
   padding: 0.35rem 0.6rem;
   cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+h1,
+h2,
+strong {
+  color: var(--text);
 }

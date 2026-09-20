@@ -1,6 +1,11 @@
 <header>
   <a routerLink="/">Interview Angular</a>
-  <span>Phase 1 — home only</span>
+  <div class="actions">
+    <button type="button" (click)="toggleTheme()" [attr.aria-pressed]="theme() === 'dark'">
+      {{ theme() === 'dark' ? 'Light mode' : 'Dark mode' }}
+    </button>
+    <span>Phase 1 — home only</span>
+  </div>
 </header>
 <main>
   <router-outlet />
